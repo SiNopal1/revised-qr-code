@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman Pelangi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .space-columnin {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        // teksutama = [];
+        // tekstambahan = [];
+        // link = [];
+        // linkgambar = [];
+
+        teksutama = ['Asoka', 'Daun Beludru', 'Daun Dewa', 'Ganda Rusa / Daun Rusa', 'Hanjuang', 'Kamboja Jepang', 'Kimeng', 'Kumis Kucing', 'Lidah Buaya', 'Lidah Mertua', 'Markisa', 'Mascarene Island', 'Miana', 'Palem Kuning', 'Pandan Bali', 'Sirih Gading', 'Sri Rezeki', 'Syngonium Batik Lokal', 'Walisongo Daun Kecil', 'Waringin'];
+        tekstambahan = ['saraca asoca', 'abutilon theophrasti', 'gynura divaricata', 'justicia gendarussa', 'cordyline', 'adenium obesum', 'ficus malacocarpa', 'orthosiphone aristatus', 'aloe vera', 'sansevieria', 'passiflora edulis', 'phyllanthus tenellus', 'coleus scutellarioides', 'dypsis lutescens', 'cordyline australis', 'epipremnum aureum', 'aglaonema', 'syngonium podophyllum', 'schefflera arboricola', 'ficus benjamina'];
+        link = ['asoka.html', 'daunbeludru.html', 'daundewa.html', 'gandarusa.html', 'hanjuang.html', 'kambojajepang.html', 'kimeng.html', 'kumiskucing.html', 'lidahbuaya.html', 'lidahmertua.html', 'markisa.html', 'mascareneisland.html', 'miana.html', 'palemkuning.html', 'pandanbali.html', 'sirihgading.html', 'srirezeki.html', 'syngoniumbatiklokal.html', 'walisongodaunkecil.html', 'waringin.html'];
+        linkgambar = ['asoka.jpg', 'daunbelundru.jpg', 'daundewa.jpg', 'gandarusa (2).jpg', 'hanjuang.jpg', 'kambojajepang.jpg', 'kimeng.jpg', 'kumiskucing.jpg', 'lidahbuaya.jpg', 'lidahmertua.jpg', 'markisa.jpg', 'mascareneisland (2).jpg', 'miana.jpg', 'palemkuning.jpg', 'pandanrempeh.jpg', 'sirihgading (3).jpg', 'srirezeki.jpg', 'syngoniumbatiklokal.jpg', 'walisongodaunkecil.jpg', 'waringien.jpg'];
+    </script>
+
+    <center>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Menu utama</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Tanaman</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Kembali</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="row container space-rowin" id="tanaman">
+                <script>
+                    text = '';
+                    for (let i = 0; i < teksutama.length; i++) {
+                        text += '<div class="col" id="tanaman"><div class="card h-100" style="width: 18rem; "><img src = "' + linkgambar[i] + '" class="card-img-top" alt = "" ><div class="card-body"><h5 class="card-title">' + teksutama[i] + '</h5><p class="card-text"><i>(' + tekstambahan[i] + ')</i></p><a href="../database-tanaman/' + link[i] + '" class="btn btn-primary">Pelajari Selengkapnya</a></div></div></div>';
+                    }
+                    document.getElementById('tanaman').innerHTML = text;
+                </script>
+            
+        </div>
+    </center>
+</body>
+
+</html>
