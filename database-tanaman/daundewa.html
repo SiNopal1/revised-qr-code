@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Tanaman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .btn{
+            margin-bottom: 4px;
+        }
+
+        .div-center{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="magic"></div>
+    <script>
+        data=['../taman-pelangi/daundewa.jpg', 'Daun Dewa', 'gynura divaricata', 'Daun dewa (Gynura pseudochina) atau yang juga dikenal dengan nama daun sambung nyawa merupakan tanaman asli Cina yang banyak dikembangkan di Asia Tenggara dan Afrika. Tanaman ini diketahui memiliki banyak manfaat untuk kesehatan.', 'https://id.wikipedia.org/wiki/Daun_Dewa#:~:text=Daun%20Dewa%20mempunyai%20nama%20latin,dan%20berambut%20pada%20sisi%20luar.'];
+
+        document.getElementById("magic").innerHTML = '<div class="div-center"> <div class="card" style="width: 18rem;"> <img src="' + data[0] + '" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">' + data[1] + '</h5> <p class="card-text"><b>Nama Latin : <i>' + data[2] + '</i></b><br> ' + data[3] + '</p> </div> <div class="card-body"> <a href="' + data[4] + '" class="card-link btn btn-primary">Pelajari Selengkapnya</a> <br><a href="../index.html" class="card-link btn btn-primary">Kembali ke halaman utama</a> </div> </div> </div>'
+    </script>
+</body>
+</html>
+
