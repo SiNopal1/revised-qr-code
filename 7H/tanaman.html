@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman 7H</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .space-columnin {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        teksutama = ['Mangkokan', 'Murmei Putih', 'Pucuk Merah', 'Sirih Gading', 'Sri Gading'];
+        tekstambahan = ['polyscias scutellaria', 'morus alba', 'syzygium paniculatum', 'epipremnum aureum', 'nyctanthes arbor-tristis'];
+        link = ['mangkokan.html', 'murmeiputih.html', 'pucukmerah.html', 'sirihgading.html', 'srigading.html'];
+        linkgambar = ['mangkokan.jpg', 'murmeiputih.jpg', 'pucukmerah.jpg', 'sirihgading.jpg', 'srigading.jpg'];
+    </script>
+
+    <center>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Menu utama</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Tanaman</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Kembali</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="row container space-rowin" id="tanaman">
+                <script>
+                    text = '';
+                    for (let i = 0; i < teksutama.length; i++) {
+                        text += '<div class="col" id="tanaman"><div class="card h-100" style="width: 18rem; "><img src = "' + linkgambar[i] + '" class="card-img-top" alt = "" ><div class="card-body"><h5 class="card-title">' + teksutama[i] + '</h5><p class="card-text"><i>(' + tekstambahan[i] + ')</i></p><a href="../database-tanaman/' + link[i] + '" class="btn btn-primary">Pelajari Selengkapnya</a></div></div></div>';
+                    }
+                    document.getElementById('tanaman').innerHTML = text;
+                </script>
+            
+        </div>
+    </center>
+</body>
+
+</html>
