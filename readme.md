@@ -11,7 +11,7 @@ Q : Bikin kaya gini 10 hari, kok bisa?<br />
 A : Well, ada beberapa alasan mengapa saya bisa menyelesaikan ini dalam hitungan hari. Diantaranya:
 1. Kecepatan mengetik saya rata-rata diatas 80wpm (kalau dipaksakan) dan 60wpm (dalam keadaan normal). Sehingga, saya bisa menyelesaikan ini dengan kecepatan setara developer awal
 2. Saya menggunakan template bootstrap, yang berarti saya tidak sepenuhnya harus berpikir bagaimana caranya membuat desain dengan css ini itu
-3. Watak saya seperti Killua Zoldyck : Penuh ide nakal. Sehingga saya suka banget bikin shortcut yang dapat mempersingkat development yang awalnya membutuhkan waktu 2 bulan menjadi 5 hari
+3. Saya suka banget bikin shortcut yang dapat mempersingkat development yang awalnya membutuhkan waktu 2 bulan menjadi 5 hari
 4. I sacrifice my sleep time. 5-6 hours. It's okay, I drank coffee.
 
 ## Pertanyaan 2
