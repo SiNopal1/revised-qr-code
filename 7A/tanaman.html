@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman 7A</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .space-columnin {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        teksutama = ['Brazilian Joyweed', 'Daun Dolar', 'Kaliko', 'Krokot Merah', 'Lidah Mertua', 'Lili Paris', 'Melati Selatan', 'Nanas', 'Paku Sarang Burung', 'Pepaya', 'Puring', 'Sirih Gading', 'Walisongo Daun Kecil'];
+        tekstambahan = ['alternanthera brasiliana (l.) kuntze', 'ficus pumila', 'alternanthera bettzickiana', 'althernanthera ficoidea red', 'sansevieria', 'chlorophytum comosum', 'jasminum sp.', 'ananas comosus', 'asplenium nidus', 'carica papaya', 'codiaeum variegatum', 'epipremnum aureum', 'schefflera arboricola'];
+        link = ['brazilianjoyweed.html', 'daundolar.html', 'kaliko.html', 'krokotmerah.html', 'lidahmertua.html', 'liliparis.html', 'melatiselatan.html', 'nanas.html', 'pakusarangburung.html', 'pepaya.html', 'puring.html', 'sirihgading.html', 'walisongodaunkecil.html'];
+        linkgambar = ['brazilianjoyweed.jpg', 'daundolar (2).jpg', 'kaliko.jpg', 'krokotmerah.jpg', 'lidahmertua (2).jpg', 'liliparis.jpg', 'melatiselatan.jpg', 'nanas.jpg', 'pakusarangburung.jpg', 'pepaya.jpg', 'puring.jpg', 'sirihgading.jpg', 'walisongodaunkecil.jpg'];        
+        altgambar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'];
+    </script>
+
+    <center>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Menu utama</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Tanaman</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Kembali</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="row container space-rowin" id="tanaman">
+                <script>
+                    text = '';
+                    for (let i = 0; i < teksutama.length; i++) {
+                        text += '<div class="col" id="tanaman"><div class="card h-100" style="width: 18rem; "><img src = "' + linkgambar[i] + '" class="card-img-top" alt = "' + altgambar[i] + '" ><div class="card-body"><h5 class="card-title">' + teksutama[i] + '</h5><p class="card-text"><i>(' + tekstambahan[i] + ')</i></p><a href="../database-tanaman/' + link[i] + '" class="btn btn-primary">Pelajari Selengkapnya</a></div></div></div>';
+                    }
+                    document.getElementById('tanaman').innerHTML = text;
+                </script>
+            
+        </div>
+    </center>
+</body>
+
+</html>
