@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 ERROR</title>
+    <style>
+        .img-fluid {
+            max-width: 95%;
+            height: auto;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p {
+            color: black;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .yellow-highlight {
+            background-color: rgb(255, 255, 0);
+        }
+
+        .red-highlight {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+        }
+
+        .button3:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+
+        .button4:hover {
+            background-color: #e7e7e7;
+        }
+
+        .button5 {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .button5:hover {
+            background-color: #555555;
+            color: white;
+        }
+
+        #answer {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>OOPS...</h1>
+    <p>Kamu telah <span class="yellow-highlight">menjelajah</span> terlalu dalam, sampai-sampai berakhir di webpage yang
+        <span class="yellow-highlight">tidak ada isinya</span>
+    </p>
+    <img src="xiao.jpg" class="img-fluid" alt="Xiao - Genshin Impact Character">
+    <center><br><b>BTW, Kamu tau nggak ini <span class="yellow-highlight">karakter apa?</span></b></center>
+    <button class="button button1" onclick="apkhbtul(1)">Xiao</button>
+    <button class="button button2" onclick="apkhbtul(2)">Eula</button>
+    <button class="button button3" onclick="apkhbtul(3)">Zhongli</button>
+
+    <div id="answer"></div>
+
+    <script>
+        function apkhbtul(cek){
+            answer = document.getElementById("answer")
+            if(cek == 1){
+                answer.innerHTML = "SELAMAT, JAWABAN ANDA BETUL!<br>Sekarang silahkan <a href='index.html'>kembali</a>"
+            } else {
+                answer.innerHTML = "Maaf, jawaban anda salah :("
+            }
+        }
+    </script>
+</body>
+
+</html>
