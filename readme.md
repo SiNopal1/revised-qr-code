@@ -1,3 +1,5 @@
+=> Proyek ini sudah resmi selesai. Akan tetapi, seluruh perubahan yang akan ada disebabkan oleh optimalisasi yang dibuat olehku
+
 # Latar Belakang
 Karena adiwiyata lagi naik, dan inovasi saya dilirik, akhirnya saya diberikan amanat untuk membuat seperti ini oleh tim adiwiyata. Tentu saja saya terima (deadlinenya 10 hari). That's straight to the point.
 
