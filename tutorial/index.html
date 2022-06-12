@@ -1,0 +1,160 @@
+<!-- Sauce : https://www.codingsnow.com/2021/01/awesome-parallax-mousemove-effect.html -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial Penggunaan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS */
+    .button-3 {
+      appearance: none;
+      background-color: #2ea44f;
+      border: 1px solid rgba(27, 31, 35, .15);
+      border-radius: 6px;
+      box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .button-3:focus:not(:focus-visible):not(.focus-visible) {
+      box-shadow: none;
+      outline: none;
+    }
+
+    .button-3:hover {
+      background-color: #2c974b;
+    }
+
+    .button-3:focus {
+      box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+      outline: none;
+    }
+
+    .button-3:disabled {
+      background-color: #94d3a2;
+      border-color: rgba(27, 31, 35, .1);
+      color: rgba(255, 255, 255, .8);
+      cursor: default;
+    }
+
+    .button-3:active {
+      background-color: #298e46;
+      box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+    }
+
+    .button-4 {
+      appearance: none;
+      background-color: #FAFBFC;
+      border: 1px solid rgba(27, 31, 35, 0.15);
+      border-radius: 6px;
+      box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+      box-sizing: border-box;
+      color: #24292E;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      list-style: none;
+      padding: 6px 16px;
+      position: relative;
+      transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+      white-space: nowrap;
+      word-wrap: break-word;
+    }
+
+    .button-4:hover {
+      background-color: #F3F4F6;
+      text-decoration: none;
+      transition-duration: 0.1s;
+    }
+
+    .button-4:disabled {
+      background-color: #FAFBFC;
+      border-color: rgba(27, 31, 35, 0.15);
+      color: #959DA5;
+      cursor: default;
+    }
+
+    .button-4:active {
+      background-color: #EDEFF2;
+      box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+      transition: none 0s;
+    }
+
+    .button-4:focus {
+      outline: 1px transparent;
+    }
+
+    .button-4:before {
+      display: none;
+    }
+
+    .button-4:-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <center>
+      <h2 class="object" data-value="3">
+        <span>Video Tutorial</span><br>
+      <iframe width="635" height="360" src="https://www.youtube.com/embed/bDocettjVJw">
+      </iframe><br>
+      <button class="button-3" role="button" onclick="window.location.href = '../index.html'">Oke, udah paham</button>&nbsp;
+      </h2>
+    </center>
+    <img src="1.png" class="object" data-value="-2" alt="">
+    <img src="2.png" class="object" data-value="6" alt="">
+    <img src="3.png" class="object" data-value="4" alt="">
+    <img src="4.png" class="object" data-value="-6" alt="">
+    <img src="5.png" class="object" data-value="8" alt="">
+    <img src="6.png" class="object" data-value="-4" alt="">
+    <img src="7.png" class="object" data-value="5" alt="">
+    <img src="8.png" class="object" data-value="-9" alt="">
+    <img src="9.png" class="object" data-value="-5" alt="">
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      document.querySelectorAll(".object").forEach(function (move) {
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+  </script>
+
+</body>
+
+</html>
