@@ -1,5 +1,6 @@
 => Proyek ini sudah resmi selesai. Akan tetapi, seluruh perubahan yang akan ada disebabkan oleh optimalisasi yang dibuat olehku
 
+Update: Hari ini saya diberikan amanat untuk menambahkan LAGI elemen di website taman-madrasah dengan deadline sehari.
 # Latar Belakang
 Karena adiwiyata lagi naik, dan inovasi saya dilirik, akhirnya saya diberikan amanat untuk membuat seperti ini oleh tim adiwiyata. Tentu saja saya terima (deadlinenya 10 hari). That's straight to the point.
 
@@ -23,7 +24,3 @@ A : Kendala? oh tentu ada. Bukan bikin website namanya kalau gaada kendala. Kend
 ## Pertanyaan 3
 Q : Apakah kamu mendengarkan musik dalam pembuatan webpage ini?<br />
 A : Saya selalu mendengarkan musik dalam membuat webpage. Biasanya pake [undertale ost](https://www.youtube.com/watch?v=s7RRgF5Ve_E&list=PLpJl5XaLHtLX-pDk4kctGxtF4nq6BIyjg), [animal crossing](https://www.youtube.com/watch?v=mXWh9h7tzf0), [lagu anime](https://www.youtube.com/watch?v=JBqxVX_LXvk&list=PLEWxb4I8sM9IANpBRkCH-c7fL6sIAq-Ql), dan soundtrack lainnya.
-
-## Pertanyaan 4
-Q : Apakah kamu diberi hadiah?<br />
-A : Gatau, tunggu saja nanti. Sampai saat ini saya dapet nasi bungkus dan es teh masing-masing 5 kali
