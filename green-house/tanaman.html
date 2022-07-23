@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .space-columnin {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        teksutama = ["Agave", "Agave Americana", "Sri Rejeki", "Asoka", "Bambu Jepang", "Bunga Wari", "Daun Dolar", "Nyanyian Dari India", "Janda Bolong", "Kaktus", "Kamboja", "Kembang Sepatu", "Kuping Gajah", "Lidah Mertua", "Mangkokan", "Mawar", "Melati Jepang", "Murbei Putih", "Nanas", "Kacang Saba", "Paku Tanduk Rusa", "Philo Bergerigi", "Philo Dark Lord", "Pucuk Merah", "Puring", "Rhododendron Indicum", "Lidah Mertua", "Sig-sag", "Sirih Gading", "Sri Rejeki"];
+        tekstambahan = ["agave americana", "agave americana", "aglaonema", "saraca asoca", "pseudosasa japonica", "tabernaemontana divaricata", "ficus pumila", "dracaena reflexa", "monstera adansonii", "cactaceae", "plumeria", "hibiscus rosa-sinensis", "anthurium", "sanseviera trifas", "polyscias scutellaria", "rosa", "jasminum mesnyi", "morus alba", "ananas comosus", "pachira aquatica", "platycerium", "thaumatophyllum bipinnatifidum", "philodendron martianum engl", "syzygium paniculatum", "codiaeum variegatum", "rhododendron indicum", "sansevieria", "euphorbia tithymaloides", "epipremnum aureum", "aglonema modestum schott"];
+        link = ["agavekuningputih.html", "agavekuningputih.html", "srirezeki.html", "asoka.html", "bambujepang.html", "bungawari.html", "daundolar.html", "nyanyiandariindia.html", "jandabolong.html", "kaktus.html", "kamboja.html", "kembangsepatu.html", "kupinggajah.html", "lidahmertua.html", "mangkokan.html", "mawar.html", "melatijepang.html", "murbeiputih.html", "nanas.html", "kacangsaba.html", "pakutandukrusa.html", "philobergerigi.html", "philodarklord.html", "pucukmerah.html", "puring.html", "rhohodendron.html", "lidahmertua.html", "sig-sag.html", "sirihgadinmg.html", "srirezeki.html"];
+        linkgambar = ["agave.jpeg", "agave-americana.jpeg", "sri-rejeki.jpeg", "asoka.jpeg", "bambu-jepang.jpeg", "bunga-wari.jpeg", "daun-dolar.jpeg", "dracaena-fragnans.jpeg", "janda-bolong.jpeg", "kaktus.jpeg", "kamboja.jpeg", "kembang-sepatu.jpeg", "kuping-gajah.jpeg", "lidah-mertua.jpeg", "mangkokan.jpeg", "mawar.jpeg", "melati-jepang.jpeg", "morus-alba.jpeg", "nanas.jpeg", "pachira.jpeg", "paku-tanduk-rusa.jpeg", "philo-bergerigi.jpeg", "philodendron-martianum-engl.jpeg", "pucuk-merah.jpeg", "puring.jpeg", "rhododendron-indicum.jpeg", "sansevieria-trifasciata-prain.jpeg", "sig-sag.jpeg", "sirih-gading.jpeg", "sri-rejeki.jpeg"];
+
+        // teksutama = [];
+        // tekstambahan = [];
+        // link = [];
+        // linkgambar = [];
+    </script>
+
+    <center>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Menu utama</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Tanaman</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Kembali</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="row container space-rowin" id="tanaman">
+            <script>
+                text = '';
+                for (let i = 0; i < teksutama.length; i++) {
+                    text += '<div class="col" id="tanaman"><div class="card h-100" style="width: 18rem; "><img src = "' + linkgambar[i] + '" class="card-img-top" alt = "" ><div class="card-body"><h5 class="card-title">' + teksutama[i] + '</h5><p class="card-text"><i>(' + tekstambahan[i] + ')</i></p><a href="../database-tanaman/' + link[i] + '" class="btn btn-primary">Pelajari Selengkapnya</a></div></div></div>';
+                }
+                document.getElementById('tanaman').innerHTML = text;
+            </script>
+
+        </div>
+    </center>
+</body>
+
+</html>
