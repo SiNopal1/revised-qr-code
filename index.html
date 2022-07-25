@@ -186,11 +186,11 @@
     </div>
   </div>
   <script>
-    var hasVisited = sessionStorage.getItem('washere');
+    var hasVisited = localStorage.getItem('hasvisited')
 
     if (!hasVisited) {
       window.location.href = "tutorial/index.html";
-      sessionStorage.setItem('washere', true);
+      localStorage.setItem('hasvisited', 'true');
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
